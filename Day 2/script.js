@@ -63,6 +63,8 @@ function resetGame(){
     guessField.focus();
 
     lastResult.style.backgroundColor = "white";
+    guesses.style.fontSize = "200%";
+    guesses.style.padding = "10px";
     numberRandomizer = Math.floor(Math.random()*100 ) +1;
 
 }
