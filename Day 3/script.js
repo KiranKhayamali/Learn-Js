@@ -44,6 +44,14 @@ function checkGuess() {
 guessSubmit.addEventListener('click', checkGuess); //js is case sensitive so don't mistake with function as
 // if we use addeventListener instead of addEventListener it will gives error 
 
+function setGameOver() {
+    guessField.disabled = true;
+    guessSubmit.disabled = true;
+    resetButton = document.createElement('button');
+    resetButton.textContent = 'Start new game';
+    document.body.appendChild(resetButton);
+    resetButton.addEventListener('click', resetGame);
+}
 
 function resetGame() {
     guessCount = 1;
