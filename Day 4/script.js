@@ -7,7 +7,12 @@ buttonA.onclick = () => {
     headingA.textContent = (`Welcome ${name}`);
 };
 
-let myname = "Kiran";
-let myage = 22;
+//Declaring and intializing variables
+let myname = "Kiran"; // String 
+let myage = 22; // numbers 
+let iAmAlive = true; // boolean
+let myNameArray = ["Chris", "Bob", "Jim"]; // Arrays for strings
+let myNumberArray = [10, 15, 40]; // Array for numbers
+// We can check the variables by using textcontent or in the console of browser using inspect 
 
 headingA.textContent = (`Hello! I am ${myname} And I am ${myage} years old`);
