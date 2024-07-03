@@ -43,3 +43,41 @@ console.log(newline);
 const test = "Front ";
 const number = 39;
 console.log(test + number);
+
+//using some bult-in methods
+const browserType = "mozilla";
+
+if (browserType.includes("zilla")) {
+  console.log("Found zilla!");
+} else {
+  console.log("No zilla here!");
+}
+if (browserType.startsWith("zilla")) {
+    console.log("Found zilla!");
+} else {
+    console.log("No zilla here!");
+}
+if (browserType.endsWith("zilla")) {
+    console.log("Found zilla!");
+} else {
+    console.log("No zilla here!");
+}
+
+const tagline = "Resources for developers, by developers";
+console.log(tagline.indexOf("developers")); //index of substring developers
+
+const firstOccurrence = tagline.indexOf("developers");
+const secondOccurrence = tagline.indexOf("developers", firstOccurrence + 1);
+console.log(firstOccurrence); 
+console.log(secondOccurrence);
+
+const browserTypeof = "mozilla";
+const updated = browserTypeof.replace("moz", "van");
+
+console.log(updated); 
+console.log(browserTypeof);
+
+let quote = "To be or not to be";
+quote = quote.replaceAll("be", "code");
+
+console.log(quote);
