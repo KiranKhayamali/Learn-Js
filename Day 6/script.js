@@ -46,3 +46,23 @@ const index = cities.indexOf("Liverpool");
 // }
 // console.log(cities);
 
+// Accessing items from array
+const birdGroup = ["Parrot", "Falcon", "Owl"];
+
+for (const bird of birdGroup) {
+  console.log(bird);
+}
+
+function double (number){
+    return number * 2;
+}
+const numbers = [1, 3, 7, 9];
+const doubled = numbers.map(double); // all items of numbers array are doubled
+console.log(doubled);
+
+function isEven(number){
+    return number%2 === 0; // items are returnwed only if condtion is satisfied
+}
+const digits = [1,2,3,4,5,6,7,8,9];
+const even = digits.filter(isEven);
+console.log(even);
