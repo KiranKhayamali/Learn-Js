@@ -9,6 +9,7 @@ const MAX_HISTORY = 5;
 searchButton.onclick = () =>{
     if (searchInput !== ""){
         myHistory.unshift(searchInput.value); // using unshift to push item at the begining and searchInput.value to show value
+   
     // empty the list so that we don't display duplicate entries
     // the display is regenerated every time a search term is entered.
         list.innerHTML = "";
