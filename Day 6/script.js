@@ -64,7 +64,7 @@
 //     return number%2 === 0; // items are returnwed only if condtion is satisfied
 // }
 // const digits = [1,2,3,4,5,6,7,8,9];
-// const even = digits.filter(isEven);
+// const even = digits.filter(isEven);  
 // console.log(even);
 
 // //converting string into array and vice versa
