@@ -1,13 +1,11 @@
 const select = document.querySelector("select");
 const para = document.querySelector("p");
-const temp = document.getElementById("temperature");
 
 select.addEventListener("change", setWeather);
 
 function setWeather() {
   const choice = select.value;
-  const temperature = temp.value;
-//   let temperature = 36;
+  let temperature = 36;
 
   if (choice === "sunny") {
     if (temperature < 32) { 
