@@ -11,4 +11,3 @@ function toUpper(string) {
 const upperCats = cats.map(toUpper);
 console.log(upperCats);
 // [ "LEOPARD", "SERVAL", "JAGUAR", "TIGER", "CARACAL", "LION" ]
-
