@@ -4,6 +4,12 @@ const h1 = document.querySelector("h1");
 
 select.addEventListener("change", () =>{ //change is used because of the select type ie option
     const choice = select.value;
+    let days = 31;
+    if (choice === "February"){
+        days = 28;
+    } else if  (choice === "April" ||choice === "June" ||choice === "September" ||choice === "November") {
+        days = 30;
+    }
     createCalender(choice, days);
 })
 
